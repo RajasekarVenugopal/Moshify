@@ -278,3 +278,35 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Card */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  border: 1px solid;
+  overflow: hidden;
+
+  width: 30%;
+}
+
+.card__header {
+  padding: 2rem;
+  color: var(--white);
+}
+
+.card--primary .card__header {
+  background-color: var(--color-primary);
+}
+
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+}
+
+.card__body {
+  padding: 2rem;
+  color: var(--color-heading);
+}
+
+.card__footer {
+  padding: 2rem;
+}
