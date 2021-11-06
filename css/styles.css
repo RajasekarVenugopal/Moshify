@@ -101,7 +101,7 @@ a {
 
 .badge {
   border-radius: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 600;
   white-space: nowrap;
   font-size: 2rem;
@@ -144,7 +144,7 @@ a {
 }
 
 .list--tick {
-  padding-left: 2rem;
+  padding-left: 3rem;
   list-style-image: url("../icons/tick.svg");
 }
 
@@ -283,10 +283,10 @@ a {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  border: 1px solid;
   overflow: hidden;
 
-  width: 30%;
+  /* TODO: Remove this width */
+  width: 29%;
 }
 
 .card__header {
@@ -302,6 +302,10 @@ a {
   background-color: var(--color-secondary);
 }
 
+.card--secondary .badge--secondary {
+  background-color: #02cdf1;
+}
+
 .card__body {
   padding: 2rem;
   color: var(--color-heading);
@@ -309,4 +313,55 @@ a {
 
 .card__footer {
   padding: 2rem;
+}
+
+/* Plan component */
+.plan {
+}
+
+.plan__name {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.plan .list__item {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
