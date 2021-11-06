@@ -284,9 +284,6 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
-
-  /* TODO: Remove this width */
-  width: 29%;
 }
 
 .card__header {
@@ -317,6 +314,9 @@ a {
 
 /* Plan component */
 .plan {
+  /* TODO: remove the fixed width */
+  width: 300px;
+  position: relative;
 }
 
 .plan__name {
@@ -346,6 +346,15 @@ a {
 .plan .list__item {
   margin-bottom: 1rem;
   letter-spacing: 1px;
+}
+
+.plan--popular .card__header::before {
+  content: url("../icons/popular.svg");
+  width: 4rem;
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  left: 85%;
 }
 
 @media screen and (min-width: 1024px) {
