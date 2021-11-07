@@ -332,6 +332,10 @@ a {
   background-color: var(--color-secondary);
 }
 
+.card--primary .badge--primary {
+  background-color: #125de4;
+}
+
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
@@ -347,9 +351,12 @@ a {
 
 /* Plan component */
 .plan {
-  /* TODO: remove the fixed width */
-  width: 300px;
   position: relative;
+  transition: transform 0.25s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
 }
 
 .plan__name {
@@ -381,13 +388,23 @@ a {
   letter-spacing: 1px;
 }
 
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
 .plan--popular .card__header::before {
   content: url("../icons/popular.svg");
   width: 4rem;
   display: inline-block;
   position: absolute;
-  top: -4px;
-  left: 85%;
+  top: -5px;
+  left: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -480,9 +497,23 @@ a {
   grid-template-columns: 2fr;
 }
 
+.grid--cols-3 {
+  grid-template-columns: 3fr;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .grid--cols-2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -741,4 +772,14 @@ a {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Plans block */
+.plan-block .grid {
+  gap: 8rem 4rem;
+}
+
+.plan-block .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
