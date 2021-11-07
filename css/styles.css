@@ -260,6 +260,13 @@ a {
   padding-right: 6rem;
 }
 
+.btn .icon {
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -275,6 +282,7 @@ a {
   color: var(--color-heading);
   outline: 0;
   font-size: 2rem;
+  width: 0;
 }
 
 .input::placeholder {
@@ -291,7 +299,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -713,4 +721,24 @@ a {
     text-align: left;
     align-self: center;
   }
+}
+
+/* Domain block */
+.domain-block .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: none;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.domain-block__prices {
+  display: grid;
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
