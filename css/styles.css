@@ -546,7 +546,7 @@ a {
   position: absolute;
   display: none;
   right: -32px;
-  top: 5rem;
+  top: 3rem;
   width: 6rem;
   height: 6rem;
 }
@@ -558,7 +558,7 @@ a {
   }
 
   .testimonial .quote {
-    margin-left: 6rem;
+    margin: 6rem;
   }
 }
 
@@ -647,6 +647,7 @@ a {
 }
 
 .block__header {
+  margin-bottom: 4rem;
   text-align: center;
 }
 
