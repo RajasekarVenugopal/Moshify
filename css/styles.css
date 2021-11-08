@@ -267,8 +267,8 @@ a {
 }
 
 .btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .btn .icon {
@@ -455,6 +455,10 @@ a {
 }
 
 /* Quote */
+.quote {
+  margin: 0;
+}
+
 .quote__text {
   font-style: italic;
   color: var(--color-body-dark);
@@ -514,6 +518,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -580,6 +588,7 @@ a {
 }
 
 .callout__content--heading {
+  margin-top: 0;
   color: var(--white);
 }
 
@@ -606,6 +615,16 @@ a {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+}
+
+/* Callout block */
+.callout-block {
+  background: repeating-linear-gradient(
+    white,
+    white 50%,
+    #232323 50%,
+    #232323 100%
+  );
 }
 
 /* Collapsible */
@@ -692,6 +711,10 @@ a {
   flex-wrap: wrap;
   padding: 0 1rem;
   align-items: center;
+}
+
+.nav__logo {
+  vertical-align: middle;
 }
 
 .nav__menu {
@@ -781,6 +804,7 @@ a {
 }
 
 .domain-block__prices {
+  color: var(--color-heading);
   display: grid;
   justify-items: center;
   font-size: 2rem;
@@ -833,10 +857,6 @@ a {
 /* Showcase */
 .showcase__header {
   color: var(--white);
-}
-
-.showcase__content {
-  overflow: hidden;
 }
 
 .showcase__image > img {
