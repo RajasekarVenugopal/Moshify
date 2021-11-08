@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://yarn.pm/normalize.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -37,12 +38,12 @@
     <!-- Hero block Start -->
     <section class="block block--black block--skewed-left hero">
       <div class="grid grid--cols-2 container">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Cloud hosting for pros</h1>
           <p class="hero__tagline">Deploy your websites in less than 60 seconds</p>
           <a href="" class="btn btn--accent btn--stretched">get started</a>
         </header>
-        <picture>
+        <picture data-aos="fade-left">
           <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
           <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
           <img class="hero__image" src="images/banner.png" alt="">
@@ -52,7 +53,7 @@
     <!-- Hero block End -->
 
     <!-- Domain block Start -->
-    <section class="domain-block block container">
+    <section class="domain-block block container" data-aos="slide-up">
       <header class="block__header">
         <h2>
           Starting at $10 per month
@@ -81,7 +82,7 @@
 
     <!-- Plans block Start -->
     <section class="container block plan-block">
-      <div class="grid grid--cols-3">
+      <div class="grid grid--cols-3" data-aos="slide-up">
         <div class="plan">
           <div class="card card--secondary">
             <header class="card__header">
@@ -166,7 +167,7 @@
       </header>
       <!-- Feature (Easy) -->
       <article class="feature grid grid--cols-2">
-        <div class="feature__description">
+        <div class="feature__description" data-aos="fade-up">
           <span class="icon-container icon-container--small">
             <svg class="icon icon--primary icon--small">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -178,7 +179,7 @@
             officia dolores!</p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
           <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
           <img src="images/easy.jpg" alt="" class="feature__image">
@@ -186,7 +187,7 @@
       </article>
       <!-- Feature (Fast) -->
       <article class="feature grid grid--cols-2">
-        <div class="feature__description">
+        <div class="feature__description" data-aos="zoom-in">
           <span class="icon-container icon-container--small">
             <svg class="icon icon--primary icon--small">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -198,7 +199,7 @@
             officia dolores!</p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
           <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
           <img src="images/fast.jpg" alt="" class="feature__image">
@@ -206,7 +207,7 @@
       </article>
       <!-- Feature Wordpress -->
       <article class="feature grid grid--cols-2">
-        <div class="feature__description">
+        <div class="feature__description" data-aos="fade-left">
           <span class="icon-container icon-container--small">
             <svg class="icon icon--primary icon--small">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -218,7 +219,7 @@
             officia dolores!</p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
           <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
           <img src="images/wordpress.jpg" alt="" class="feature__image">
@@ -227,7 +228,7 @@
 
       <!-- Feature 24/7 Support -->
       <article class="feature grid grid--cols-2">
-        <div class="feature__description">
+        <div class="feature__description" data-aos="zoom-in-up">
           <span class="icon-container icon-container--small">
             <svg class="icon icon--primary icon--small">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -239,7 +240,7 @@
             officia dolores!</p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in">
           <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
           <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
           <img src="images/support.jpg" alt="" class="feature__image">
@@ -255,12 +256,12 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem.</p>
       </header>
       <div class="grid grid--cols-2 showcase__content container">
-        <picture class="showcase__image">
+        <picture class="showcase__image" data-aos="slide-right">
           <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
           <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
           <img src="images/ipad.png" alt="">
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="zoom-out">
           <li>
             <div class="media">
               <div class="media__img">
@@ -315,7 +316,7 @@
     <!-- Showcase block End -->
 
     <!-- Testimonial block Start -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.</p>
@@ -355,7 +356,7 @@
     <!-- Testimonial block End -->
 
     <!-- Callout block Start -->
-    <section class="block callout-block">
+    <section class="block callout-block" data-aos="slide-up">
       <div class="callout callout--primary container">
         <div class="grid grid--cols-2">
           <div class="callout__content">
@@ -451,6 +452,7 @@
   </footer>
   <!-- Footer block End -->
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 
 </html>
